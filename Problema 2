@@ -1,0 +1,36 @@
+/*
+Práctica 09                                 Ramírez Esquivel Iann Emmanuel
+7 de diciembre del 2020
+*/
+/*Programa para Determinar, de N cantidades, cuántas son menores o 
+iguales a cero y cuántas mayores a cero. */
+
+//declaracion de librerias
+#include<stdio.h>
+//declaracion de funcion
+int main(){
+	//declaracion de variables
+	char op = 'n';
+	int cant;
+	int menores=0;
+	int mayores=0;
+	//ciclo para almacenar la evaluacion de cantidades ingresadas
+	printf("Programa para determinar cuantas cantidades son menores o\niguales a cero y cuantas mayores a cero.\n");
+	do {
+		printf("Ingresar cantidad que desea evaluar:\n");
+		scanf("%d",&cant);
+		if (cant<=0){
+			menores=menores+1;
+		}
+		if (cant>0){
+			mayores=mayores+1;
+		}
+		printf("Desea ingresar otro valor? s/n\n");
+		setbuf(stdin, NULL);
+		scanf("%c",&op);
+	} while (op == 'S' || op == 's');
+	//impresion de cantidad de valores de cada tipo
+	printf("La cantidad de valores menores o iguales a 0 son: %d\n",menores);
+	printf("La cantidad de valores mayores a 0 son: %d\n",mayores);
+	return 0;
+}
