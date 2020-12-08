@@ -1,0 +1,24 @@
+/*
+Práctica 09                                 Ramírez Esquivel Iann Emmanuel
+7 de diciembre del 2020
+*/
+/*Programa para generar e imprimir los números pares 
+que se encuentran entre 0 y 100. */
+
+//declaracion de librerias
+#include<stdio.h>
+#include<iostream>
+//declaracion de funcion
+int main(){
+
+	//declaracion de variable
+	int cont=0;
+	//ciclo de repeticion de 0 hasta 100
+	printf("Programa para generar e imprimir los números pares que se encuentran entre 0 y 100.");
+	for (cont=0;cont<=100;cont=cont+1){
+		if (cont % 2==0){
+			printf("%d es par\n",cont);	
+		}
+	}
+	return 0;
+}
