@@ -1,0 +1,28 @@
+/*
+Práctica # 9                                 Ramírez Esquivel Iann Emmanuel
+7 de diciembre del 2020
+*/
+/*Programa para determinar cuánto ahorrará una persona en un año, si al final 
+de cada mes deposita variables cantidades de dinero; además, se requiere saber 
+cuánto lleva ahorrado cada mes. */
+
+//declaracion de librerias
+#include<stdio.h>
+//declaracion de funcion
+int main(){
+	//declaracion de variables
+	int mes = 1;
+	float deposito;
+	float ahorro=0;
+	//Ciclo de cantidad de veces de ahorro, 12=1 año
+	while (mes<=12){
+		printf("Buenas dias, ingrese la cantidad que desea ahorrar:\n");
+		scanf("%f",&deposito);
+		ahorro=ahorro+deposito;
+		printf("La cantidad ahorrada en el mes %d es: %f\n",mes,ahorro);
+		mes++;
+	}
+	//presentacion de cantidad ahorrada
+	printf("la cantidad ahorra en total en un año es: %f",ahorro);
+	return 0;
+}
